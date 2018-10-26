@@ -1,15 +1,15 @@
-extends _component/layout/template
+extends ../../_component/layout/template
 
 block config
     -
-        var pageTitle = 'Learn to code HTML, CSS and JS';
-        var pageDescription = 'page description';
-        var landingPage ='HOME';
-        var activeLink = '';
+        var pageTitle = 'Learn HTML attributes';
+        var pageDescription = 'HTML page attributes';
+        var landingPage ='HTML';
+        var activeLink = '/html/attributes';
 
 block main-content
-    h1 This is a replica of w3schools
-    p Presenting all HTML and CSS elements.
+    h1=pageTitle
+    p=pageDescription
     h2 HTML
     p The language for building web pages. #[a(href='/html') Check it out!]
     h2 CSS

@@ -1,0 +1,19 @@
+-
+    var topNavList =[
+        {label: 'Home', link: '/'},
+        {label: 'HTML', link: '/html'},
+        {label: 'CSS', link: '/css'},
+        {label: 'JavaScript', link: '/javascript'}
+    ];
+header
+    each nav in topNavList
+     if nav.label==landingPage
+        a.current(href=`${baseUrl}${nav.link}`)=nav.label
+     else
+      a(href=`${baseUrl}${nav.link}`)=nav.label
+
+
+    //- a.current(href="/") Home
+    //- a(href="/html") HTML
+    //- a(href="/css") CSS
+    //- a(href="/javascript") JavaScript

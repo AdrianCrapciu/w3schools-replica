@@ -1,0 +1,15 @@
+doctype html
+html
+    - var baseUrl = 'https://adriancrapciu.github.io/w3schools-replica';
+    //- - var baseUrl = 'http://localhost:3000';
+    block config
+    head
+        title=pageTitle
+        meta(name='description', content=pageDescription)
+        link(rel='stylesheet' href=`${baseUrl}/style.css`)
+    body
+        include ../header/header        
+        article
+          block main-content
+        include ../nav/nav
+        include ../footer/footer
